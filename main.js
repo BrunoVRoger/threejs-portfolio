@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('./space-2.jpg');
+const spaceTexture = new THREE.TextureLoader().load('../imagens/space-2.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const brunoTexture = new THREE.TextureLoader().load('../img/Bruno02.jpg');
+const brunoTexture = new THREE.TextureLoader().load('../imagens/Bruno02.jpg');
 
 const bruno = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: brunoTexture }));
 
@@ -73,8 +73,8 @@ scene.add(bruno);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load("../imagens/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load('../imagens/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
